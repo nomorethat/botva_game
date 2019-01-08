@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Borva</title>
+	<link href="styles/main.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="js_scripts/functions.js"></script>
+</head>
+<body>
+	
+	<div id="container">
+		<div id="bg_layer">
+		</div>
+		<div id="div_rules">
+			<span id="title_of_rules">Правила</span><span id="close_rules">x</span>
+			<div id="description_of_rules">
+				<span>Привет! Ты когда-нибудь слышал о перетягивании каната? В игре Borva или, как её ещё принято называть - Бодалке, мы предлагаем тебе посоревноваться в перетягивании каната, только, вместо самого каната, ты будешь использовать свою интуицию.  Как только ты заходишь в игру, ты и твой соперник, получаете по 1000$. Далее, ты пытаешься угадать, у тебя на костях выпадет больше, меньше или столько же очков на костях, в отличие от броска твоего соперника. Только после этого вы бросаете сами кости. Если ты угадываешь, тебе прибавляется 100$, а у твоего соперника вычитаются 100$, если ты не угадываешь, то, наоборот, у тебя вычитаются 100$, а противнику прибавляется 100$. Кто первый доходит до нуля, тот проигрывает. Удачи!</span>
+			</div>
+		</div>
+		<div id="title_of_game">
+			<span>Б О Д А Л К А</span>
+		</div>
+		<table id="game_panel" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td width="25%">
+					<span>ВЫ</span>
+				</td>
+				<td rowspan="4">
+					<div id="control_panel">
+						<span>Угадай, у кого больше очков на костях?</span>
+						<div class="controls" id="button_i_have"  onselectstart="return false" onmousedown="return false">
+							У меня!
+						</div>
+						<div class="controls" id="button_computer_have" onselectstart="return false" onmousedown="return false">
+							У него=(
+						</div>
+						<div class="controls" id="both" onselectstart="return false" onmousedown="return false">
+							Поровну...
+						</div>
+						<div id="separate">
+							--------------
+						</div>
+						<div class="controls" id="new_game" onselectstart="return false" onmousedown="return false">
+							Новая игра
+						<div>
+						<div class="controls" id="rules" onselectstart="return false" onmousedown="return false">
+							Правила
+						<div>
+						<span id="result_message">-</span>
+					</div>
+				</td>
+				<td width="25%">
+					<span>Компьютер</span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/1.png" alt="1" />
+				</td>
+				
+				<td>
+					<img src="images/2.png" alt="2" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="you_cash">
+						<span>1000$</span>
+					</div>
+				</td>
+				
+				<td>
+					<div id="computer_cash">
+						<span>1000$</span>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table id="your_points" border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<div id="your_first_point">
+									<span>-</span>
+								</div>
+							</td>
+							<td>
+								<div id="your_second_point">
+									<span>-</span>
+								</div>
+							</td>
+							<td>
+								<div id="your_third_point">
+									<span>-</span>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+				
+				<td>
+					<table id="computer_points" border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<div id="computer_first_point">
+									<span>-</span>
+								</div>
+							</td>
+							<td>
+								<div id="computer_second_point">
+									<span>-</span>
+								</div>
+							</td>
+							<td>
+								<div id="computer_third_point">
+									<span>-</span>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		
+	</div>
+	
+</body>
+</html>
+
+

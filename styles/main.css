@@ -1,0 +1,286 @@
+body, html {       
+	margin:0px;
+	padding:0px;
+	height: 100%;
+	background-color: #c80e0f;
+}
+
+#container{
+	width: 100%;
+	height: 100%;
+	background-color: #c80e0f;
+}
+
+#title_of_game{
+	width: 100%;
+	height: 42px;
+	border-bottom: 2px dotted #000;
+	font-family: Mistral;
+	font-size: 34px;
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+}
+
+#game_panel{
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 1100px;
+	text-align: center;
+}
+
+#game_panel span{
+	font-family: Mistral;
+	font-size: 36px;
+	color: #fff;
+}
+
+#game_panel img{
+	border: 2px solid #fff;
+	border-bottom: none;
+	margin-top: -30px;
+}
+
+#game_panel #your_points,  #game_panel #computer_points{
+	margin: 0 auto;
+}
+
+#game_panel #your_first_point,  #game_panel #your_second_point,  #game_panel #your_third_point,  #game_panel #computer_first_point,  #game_panel #computer_second_point,  #game_panel #computer_third_point{
+	width: 56px;
+	height: 56px;
+	border: 1px solid #000;
+	background-color: #fff;
+	border-radius: 16px;
+	margin: 10px;
+}
+
+#game_panel #your_first_point span,  #game_panel #your_second_point span,  #game_panel #your_third_point span,  #game_panel #computer_first_point span,  #game_panel #computer_second_point span,  #game_panel #computer_third_point span{
+	color: #000;	
+	font-size: 44px;
+}
+
+#game_panel #your_first_point{
+	transform: rotate(6deg);
+ }
+ 
+#game_panel #your_second_point{
+	transform: rotate(-6deg);
+}
+
+#game_panel #your_third_point{
+	transform: rotate(10deg);
+}
+
+#game_panel #computer_first_point{
+	transform: rotate(-12deg);
+}
+
+#game_panel #computer_second_point{
+	transform: rotate(4deg);
+}
+
+#game_panel #computer_third_point{
+	transform: rotate(-14deg);
+}
+
+#game_panel #you_cash, #game_panel #computer_cash{
+	background-color: #000;
+	width: 244px;
+	margin: 0 auto;
+	border: 2px solid #fff;
+	margin-top: -43px;
+}
+
+#control_panel{
+	width: 400px;
+	height: 500px;
+	background-color: #fff;
+	margin: 0 auto;
+	margin-top: 0px;
+	border: 4px solid #000;
+	border-radius: 20px;
+	padding-top: 10px;
+}
+
+#control_panel span{
+	color: #000;
+	font-size: 16px;
+	font-family: verdana;
+	font-weight: 900;
+}
+
+#control_panel .controls{
+	width: 270px;
+	height: 50px;
+	background-color: #000;
+	border: 3px solid #f00;
+	color: #fff;
+	font-family: Mistral;
+	font-size: 40px;
+	margin: 0 auto;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+#control_panel .controls #button_i_have{
+	margin-top: 100px;
+}
+
+#control_panel .controls #result_message{
+	font-size: 20px;
+	display: block;
+	margin-top: 40px;
+}
+
+#separate{
+	font-size: 26px;
+}
+
+#container #bg_layer{
+	display: none;	
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+#container #div_rules{
+	display: none;	
+	position: absolute;
+	z-index: 20;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 700px;
+	height: 300px;
+	background-color: #f0aaaa;
+	border: 4px solid #000;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#container #div_rules #description_of_rules{
+	border: 1px solid #000;
+	font-family: Verdana;
+	font-weight: 900;
+	font-size: 14px;
+	text-align: justify;
+	padding: 10px;
+	margin-top: 20px;
+	background-color: #eb9898;
+	opacity: 0.8;
+}
+
+#container #div_rules #title_of_rules{
+	font-family: Verdana;
+	font-weight: 900;
+	font-size: 22px;
+}
+
+#container #div_rules #close_rules{
+	float: right;
+	font-family: Verdana;
+	font-weight: 900;
+	font-size: 22px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+#container #rules{
+	cursor: pointer;
+}
+
+/* 1280px */
+
+@media screen and (max-width: 1280px){
+	#game_panel{
+		width: 1024px;	
+	}
+}
+
+/* 1024px */
+
+@media screen and (max-width: 1024px){
+	#game_panel{
+		width: 950px;
+		margin-top: 20px;
+	}
+	
+	#control_panel{
+		width: 350px;
+		height: 440px;
+	}
+	
+	#control_panel .controls{
+		width: 220px;
+		height: 40px;
+		margin-top: 12px;
+		font-size: 38px;
+	}
+	
+	#game_panel img{
+		margin-top: 0px;
+	}
+	
+	#game_panel #you_cash, #game_panel #computer_cash{
+		margin-top: -5px;
+	}
+
+}
+
+/* 768px */
+
+@media screen and (max-width: 768px){
+	#game_panel{
+		width: 700px;
+		margin-top: 32px;
+	}
+	
+	#control_panel{
+		width: 250px;
+		height: 400px;
+	}
+	
+	#control_panel .controls{
+		width: 180px;
+		height: 34px;
+		margin-top: 12px;
+		font-size: 32px;
+	}
+	
+	#game_panel img{
+		width: 200px;
+		margin-top: -20px;
+	}
+	
+	#game_panel #you_cash, #game_panel #computer_cash{
+		margin-top: -31px;
+		width: 200px;
+		height: 30px;
+		
+	}
+
+	#game_panel #you_cash span, #game_panel #computer_cash span{
+		font-size: 30px;
+	}
+	
+	#game_panel #your_first_point,  #game_panel #your_second_point,  #game_panel #your_third_point,  #game_panel #computer_first_point,  #game_panel #computer_second_point,  #game_panel #computer_third_point{
+		width: 46px;
+		height: 46px;
+		margin: 10px;
+		margin-top: 0px;
+	}
+	
+	#game_panel #your_first_point span,  #game_panel #your_second_point span,  #game_panel #your_third_point span,  #game_panel #computer_first_point span,  #game_panel #computer_second_point span,  #game_panel #computer_third_point span{
+		font-size: 34px;
+	}
+	
+	#control_panel .controls #result_message{
+		font-size: 14px;
+		margin-top: 40px;
+	}
+}
